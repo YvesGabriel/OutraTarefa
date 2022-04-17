@@ -19,7 +19,7 @@ a {
 #container { /*define o tamanho do container*/
   margin: 80px auto;
   max-width: 400px;
-  padding:20px;
+  padding:25px;
 }
 .form-wrap{
     background: #fff; /*define a cor de fundo*/
@@ -104,6 +104,28 @@ a {
   background: rgba(0,0,0,0.6);
 }
 
+@media(max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      height: 120px;
+      padding: 20px;
+  }
+  .navbar.navbar.top {
+    flex-direction: column;
+    height: 1px;
+    padding: 0px;
+}
+.hero::before {
+  flex-direction: column;
+  height: 60px;
+  padding: 10px;
+}
+
+  .navbar a {
+      padding: 10px 10px;
+      margin: 0 3px;
+  }
+ 
 
 
 
